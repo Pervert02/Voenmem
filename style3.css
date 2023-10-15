@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('fon2.jpg');
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin: 22% 10%; /* Обновленные значения отступов */
+}
+
+.success-message h1 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Установлен размер шрифта */
+}
+
+.return-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Используем относительное значение ширины */
+    max-width: 200px; /* Максимальная ширина */
+    height: 40px; /* Используем относительное значение высоты */
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(45deg, #FFA07A, #FF4500);
+    cursor: pointer;
+    transition: background 2.3s;
+    text-decoration: none;
+}
+
+.return-button__text {
+    font: 1rem 'Open Sans', sans-serif; /* Установлен размер шрифта */
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+
+.return-button:hover {
+    background: linear-gradient(45deg, #FF6347, #FF4500);
+}
+
+.return-button:hover .return-button__text {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .success-message {
+        margin: 10% 5%; /* Измененные отступы для мобильных устройств */
+    }
+
+    .return-button {
+        width: 60%; /* Измененная ширина для мобильных устройств */
+    }
+
+    .return-button__text {
+        font-size: 0.8rem; /* Измененный размер шрифта для мобильных устройств */
+    }
+}
