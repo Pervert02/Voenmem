@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+  
+header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+  
+button {
+  margin: 5px;
+}
+  
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+  
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+  
+th {
+  background-color: #f2f2f2;
+}
+
+.validation-error {
+  color: red;
+  font-size: 12px;
+  margin-left: 5px; 
+  display: inline-block; 
+}
+
+.hidden {
+  display: none;
+}
+
+#addOrderForm,
+#editOrderForm {
+  max-width: 300px;
+  margin: 15px;
+  
+}
+
+#addOrderForm label,
+#editOrderForm label{
+  
+  margin-bottom: 8px;
+}
+
+#addOrderForm input,
+#editOrderForm input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+
+#addOrderForm button, 
+#editOrderForm button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addOrderForm button:hover,
+#editOrderForm button:hover {
+  background-color: #45a049;
+}
+
+
